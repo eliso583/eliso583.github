@@ -18,7 +18,351 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
  <title>Introduccion a la ing. de sistemas</title> 
     
+<style>
 
+
+    
+ body {
+ font-family: Arial, sans-serif;
+
+background-color: #222224;
+ color: #ffffff;
+ margin: 0;
+ padding: 0;
+     
+    
+ }
+ 
+ 
+ footer {
+ background-color: #211349;
+ color: #dcdeff;
+ text-align: center;
+ padding: 10px;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ }
+
+
+
+
+.bgimg {
+ 
+  height: 40%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+  font-family:titulo ;
+   margin: auto;
+      height: 40%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+   
+}
+
+        .titulo {
+        color: #f2f4ff;
+      text-align: center;
+        background: linear-gradient(#45179b,#621ee3,#45179b );
+        border-radius:0px 0px 80px 80px  ;
+        font-size: 35px ;
+          box-shadow: 0px 20px 45px 15px #000;
+            
+              margin: auto;
+          
+            height:50%;
+                border:8px solid #211349;
+            margin-bottom: 120px;
+            white-space:inherit;
+            
+    }
+
+.topleft {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+    background-image: url(../Imagenes/Logo.png);
+  background-position: center;
+  background-size: cover;
+    border-radius: 2rem;
+    width: 18%;
+    height: 50%;
+    
+    
+    
+}
+
+div.scrollmenu {
+   
+    margin: 35Px;
+  background-color: #333;
+  overflow: auto;
+  white-space:inherit;
+    align-content: center;
+    justify-content:space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 0px 0px 20px 20px ;
+    
+   border:10px solid #000000; 
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #e8ecff;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+      font-size: 25px ;
+   
+}
+
+div.scrollmenu a:hover {
+  background-color: #441691;
+}
+
+.inicio{
+    
+    background: #6532f9;
+    
+} 
+
+.sub1{
+    text-align: center;
+    font-size: 45px;
+    background: #4926ff;
+    border-radius: 20px;
+   width: 45%;
+    margin: auto;
+        padding: 10px;
+     margin-top: 20px;
+    
+    
+}
+
+.subtitulo{
+    
+    display: flex;
+    
+     
+    text-align:justify
+;
+    margin: auto;
+    padding: 15px;
+    width: 95%;
+font-size:  30px;
+
+    }
+img,p{
+    padding:10px;
+    
+   
+ }
+
+.lis1{
+    display: flex;
+      
+    padding: 5px;
+    width: 98%;
+font-size:  40px;
+}
+
+.p{
+    padding: 4px;
+}
+.sub2{
+    text-align: center;
+    font-size: 40px;
+    background: #4926ff;
+    border-radius: 20px;
+   width: 65%;
+    margin: auto;
+        padding: 10px;
+     margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.marca{
+    background-color: #6823df;
+    color: #dddcff;
+    width: 20px;
+}
+
+.marca2{
+    color: palevioletred;
+}
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+     padding: 2px 16px;
+    color: white;
+    text-decoration-color: white;
+}
+
+.container {.container {
+  
+}
+    }
+    .formo{
+       text-decoration-color: white;
+        color:#730695;
+    
+    
+    }
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 8.2);
+  
+  text-align: center;
+  font-family: arial;
+   background-color:#000;
+    margin-top: 15px%;
+     border:10px solid #440fa0;
+    font-size:20px;
+    border-radius: 20px;
+    
+    
+        
+}
+
+.sal{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.ht{
+    background: #6a0bff;
+      border-radius: 10px;
+    text-align:center;
+}
+
+
+.sub3{
+    
+    
+    background:#4f1f90;
+    font-family: arial;
+    font-size: 35px;
+    color: #fff;
+    margin: auto;
+    border-radius: 20px;
+   width: 70%;
+    display: flex;
+        align-items: center;
+    align-content: ;
+    text-align: center;
+}
+
+
+.video{
+    
+    background: #240e3f;
+    padding: 10px;
+    display: flex;
+        align-items: center;
+    align-content:center;
+    
+    
+}
+
+
+.ta{
+  width: 30%;
+    display: flex;
+        align-items: center;
+    align-content:center;
+    border-radius: 20px;
+    border: 10px solid #882aff;
+    
+}
+
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: #000;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+    color: #fff;
+    
+}
+.btn:after, .btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #000;
+  transition: all 1s;
+}
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid #630f13;
+  border-left: 5px solid #fff;
+}
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid #630f13;
+  border-right: 5px solid #fff;
+}
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.btn:hover:before, .btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.data-container {
+  background: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opaco{
+   
+  padding: 10px;
+    
+    background-color: #0009;
+margin-top: -25px;
+   border-radius:30px;
+    display: flex
+    align-items: center;
+    align-content: center;
+    border: 5px solid #9d6cff;
+}
+
+.link{
+    
+    color:palevioletred;
+}
+</style>
     
 </head>
     <body >
