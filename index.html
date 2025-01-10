@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagenes/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Imagenes/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="Imagenes/favicon_io/site.webmanifest">
+
+    
+    
+  <meta charset="UTF-8">
+  <title>Introduccion a Inge. de Sistemas</title>
+  <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('fondo-2.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #titulo {
+        background: #290f43;
+      font-size: 80px;
+      color: #cbbdff;
+      text-shadow: 2px 2px 5px #290f43;
+      font-style: "italic";
+      font-family: "Lobster", sans-serif;
+      ;
+      margin-bottom: 40px;
+        border-radius: 20px;
+    }
+
+    #icono {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #1f1041;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 6px #1f1041;
+      transition: transform 0.2s;
+      animation: floatAnimation 3s infinite alternate;
+    }
+
+    #icono img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+
+    #boton {
+      padding: 15px 20px;
+      font-size: 25px;
+      font-family: 'Permanent Marker', arial;
+      color: #fff;
+      background-color: #8a2be2;
+      border: 2px solid #1f1041;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+      margin: auto;
+      z-index: 1;
+      transform-style: preserve-3d;
+      animation: glowing-button 2s infinite alternate;
+        
+    }
+
+    @keyframes glowing-button {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    #boton:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg,
+          rgba(255, 0, 0, 0.2),
+          rgba(255, 115, 0, 0.2),
+          rgba(255, 251, 0, 0.2),
+          rgba(72, 255, 0, 0.2),
+          rgba(0, 255, 213, 0.2),
+          rgba(0, 43, 255, 0.2),
+          rgba(122, 0, 255, 0.2),
+          rgba(255, 0, 200, 0.2),
+          rgba(255, 0, 0, 0.2));
+      border-radius: 10px;
+      z-index: -1;
+    }
+
+    #boton:hover,
+    #boton:active {
+      background-color: #6a1b9a;
+      transform: translateY(2px) translateZ(-5px);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+    }
+  </style>
+</head>
+<div class="opaco">
+<body onload="delayRedirect()">
+  <div class="container">
+    <div id="titulo">Introduccion a la Ing. sistemas</div>
+      <p class="sub3">Aqui podras saber sobre la ingenieria de sistemas y su introduccion al proceso o lo que pueda ver,</p>
+    <div id="icono">
+      <img src="yo.jpg" alt="Icono">
+    </div>
+</div>
+     
+    <button id="boton" onclick="window.location.href='capa2.html'" style="display: flex; align-items: center;">
+      <img src="puntero.png" alt="Micrófono"
+        style="width: 50px; height: 55px; border-radius: 0%; margin-right: 0px;">
+      <span  style="margin-left: 5px;">Iniciar</span>
+    </button>
+    </body>
+  </div>
+    
+    
+    
+  <div id="delayMsg" hidden></div>
+  <body onclick="speech ()"
+    onload="delayRedirect()">
+  <script>
+    function delayRedirect() {
+      document.getElementById("delayMsg").innerHTML = '<span id="countDown">30</span> seconds....';
+      var count = 25;
+      setInterval(function () {
+        count--;
+        document.getElementById('countDown').innerHTML = count;
+        if (count === 0) {
+          window.location = "";
+        }
+      }, 1500);
+  }
+  </script>
+  
+  <input type="text" id="text"
+    value="bienvenido a esta pagina web......y espero que te sirva.... al saber un poco de lo que es  ingenieria en sistemas... y su proceso"
+    hidden>
+  <script type="text/javascript">
+
+    function speech() {
+      var text = document.getElementById("text").value;
+      if (text !== "") {
+        voz.text = text;
+        window.speechSynthesis.speak(voz);
+      }
+    }
+
+    var voz = new SpeechSynthesisUtterance();
+    voz.lang = "es-Es";
+    voz.volume = 1;
+    var time = setInterval(function () {
+      
+      var voces = speechSynthesis.getVoices();
+      if (voces.length !== 0) {
+        voz.voces = voces[0];
+      }
+    }, 1500);
+  </script>
+    </body>
+</body>
+
+    
+</html>
